@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Net_Core_API\\DeMoMVC\\DemoMVC.csproj": {}
+    "E:\\Net_Core_API\\DemoMVC\\DemoMVC.csproj": {}
   },
   "projects": {
-    "E:\\Net_Core_API\\DeMoMVC\\DemoMVC.csproj": {
+    "E:\\Net_Core_API\\DemoMVC\\DemoMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Net_Core_API\\DeMoMVC\\DemoMVC.csproj",
+        "projectUniqueName": "E:\\Net_Core_API\\DemoMVC\\DemoMVC.csproj",
         "projectName": "DemoMVC",
-        "projectPath": "E:\\Net_Core_API\\DeMoMVC\\DemoMVC.csproj",
+        "projectPath": "E:\\Net_Core_API\\DemoMVC\\DemoMVC.csproj",
         "packagesPath": "C:\\Users\\black\\.nuget\\packages\\",
-        "outputPath": "E:\\Net_Core_API\\DeMoMVC\\obj\\",
+        "outputPath": "E:\\Net_Core_API\\DemoMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\black\\AppData\\Roaming\\NuGet\\NuGet.Config"
