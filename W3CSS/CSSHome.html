@@ -8,16 +8,26 @@
     </head>
 <body>
   <div class="w3-container">
-    <h2>Dropdown Button Phạm ANh Hoàng 2121051504</h2>
-    <p>Move the mouse over the button to open the dropdown content.Phạm Anh Hoàng 2121051504</p>
-    <div class="w3-dropdown-hover">
-      <button class="w3-button w3-black">Hover Over Me! Phạm Anh Hoàng 2121051504</button>
-      <div class="w3-dropdown-content w3-bar-block w3-border">
-        <a href="#" class="w3-bar-item w3-button">Link 1 Phạm Anh Hoàng 2121051504</a>
-        <a href="#" class="w3-bar-item w3-button">Link 2 Phạm Anh Hoàng 2121051504</a>
-        <a href="#" class="w3-bar-item w3-button">Link 3 Phạm Anh Hoàng 2121051504</a>
-      </div>
+
+    <h2>Accordions Phạm Anh Hoàng 2121051504</h2>
+    <p>An accordion is used to show (and hide) HTML content: Phạm Anh Hoàng 2121051504</p>
+      
+    <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-black w3-left-align">Open Section 1  Phạm Anh Hoàng 2121051504</button>
+    <div id="Demo1" class="w3-container w3-hide">
+      <h4>Section 1  Phạm Anh Hoàng 2121051504</h4>
+      <p>Some text..  Phạm Anh Hoàng 2121051504</p>
     </div>
-  </div>
+    
+    </div>
+    <script>
+    function myFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
 </body>
 </html>
