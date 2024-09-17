@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+iQz3YtBWdH0tD47UtrRu8+56IG69BxHYgQL/kBEI9I=",
+  "Hash": "xn6n9L9ipu++Zb3JzKoYcSUR3MXMzfvnc3c9B1Q3+as=",
   "Source": "DemoMVC",
   "BasePath": "_content/DemoMVC",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\Net_Core_API\\DemoMVC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DemoMVC.bundle.scp.css"
+    },
+    {
+      "Identity": "E:\\Net_Core_API\\DemoMVC\\wwwroot\\css\\login.css",
+      "SourceId": "DemoMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Net_Core_API\\DemoMVC\\wwwroot\\",
+      "BasePath": "_content/DemoMVC",
+      "RelativePath": "css/login.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
       "Identity": "E:\\Net_Core_API\\DemoMVC\\wwwroot\\css\\site.css",

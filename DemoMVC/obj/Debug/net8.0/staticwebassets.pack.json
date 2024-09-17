@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\DemoMVC.bundle.scp.css"
     },
     {
+      "Id": "E:\\Net_Core_API\\DemoMVC\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
       "Id": "E:\\Net_Core_API\\DemoMVC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

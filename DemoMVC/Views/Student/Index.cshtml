@@ -1,7 +1,42 @@
-<h1 style ="color : red;">Thông tin sinh viên</h1>
-<h2>Phạm Anh Hoàng</h2>
-<h3>2121051504</h3>
-<form action="Index">
-    <input type="text" name="Ho_Ten" placeholder="Nhập tên của bạn">
-    <input type="submit" name="Gửi">
-</form>
+@model IEnumerable<DemoMVC.Models.Entities.Student>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Student_Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ho_Ten)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Student_Id)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.Ho_Ten)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Ho_Ten">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Ho_Ten">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Ho_Ten">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
