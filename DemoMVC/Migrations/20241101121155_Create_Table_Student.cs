@@ -5,7 +5,7 @@
 namespace DemoMVC.Migrations
 {
     /// <inheritdoc />
-    public partial class Create_Table_Person : Migration
+    public partial class Create_Table_Student : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -16,7 +16,7 @@ namespace DemoMVC.Migrations
                 {
                     PersonId = table.Column<string>(type: "TEXT", nullable: false),
                     HoTen = table.Column<string>(type: "TEXT", nullable: false),
-                    QueQuan = table.Column<string>(type: "TEXT", nullable: false),
+                    QueQuan = table.Column<string>(type: "TEXT", nullable: true),
                     Discriminator = table.Column<string>(type: "TEXT", maxLength: 8, nullable: false),
                     EmployeeId = table.Column<string>(type: "TEXT", nullable: true),
                     Age = table.Column<int>(type: "INTEGER", nullable: true)
@@ -25,6 +25,18 @@ namespace DemoMVC.Migrations
                 {
                     table.PrimaryKey("PK_Person", x => x.PersonId);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "Student",
+                columns: table => new
+                {
+                    Ho_Ten = table.Column<string>(type: "TEXT", nullable: false),
+                    Student_Id = table.Column<string>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Student", x => x.Ho_Ten);
+                });
         }
 
         /// <inheritdoc />
@@ -32,7 +44,9 @@ namespace DemoMVC.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Person");
+
+            migrationBuilder.DropTable(
+                name: "Student");
         }
     }
 }
-

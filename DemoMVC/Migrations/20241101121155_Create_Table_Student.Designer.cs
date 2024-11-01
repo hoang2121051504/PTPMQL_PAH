@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DemoMVC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241005065310_Create_Table_Person")]
-    partial class Create_Table_Person
+    [Migration("20241101121155_Create_Table_Student")]
+    partial class Create_Table_Student
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -34,7 +34,6 @@ namespace DemoMVC.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("QueQuan")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("PersonId");

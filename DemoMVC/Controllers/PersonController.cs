@@ -18,11 +18,17 @@ namespace DemoMVC.Controllers
         {
             _context = context;
         }
-
-        // GET: Person
-        public async Task<IActionResult> Index()
+  public async Task<IActionResult> Index()
         {
-            return View(await _context.Person.ToListAsync());
+            var model = await _context.Person.ToListAsync();
+            return View(model);
+        }
+        // GET: Person
+        [HttpPost]
+        public async Task<IActionResult> Index(string keySearch)
+        {
+            var model = await _context.Person.Where(m => m.HoTen== keySearch).ToListAsync();
+            return View(model);
         }
 
         // GET: Person/Details/5
