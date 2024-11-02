@@ -24,6 +24,11 @@
             </div>
             <input type="hidden" asp-for="PersonId" />
             <div class="form-group">
+                <label asp-for="PersonId" class="control-label"></label>
+                <input asp-for="PersonId" class="form-control" />
+                <span asp-validation-for="PersonId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="HoTen" class="control-label"></label>
                 <input asp-for="HoTen" class="form-control" />
                 <span asp-validation-for="HoTen" class="text-danger"></span>
