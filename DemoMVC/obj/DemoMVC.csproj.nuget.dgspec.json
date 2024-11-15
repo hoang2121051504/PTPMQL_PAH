@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Net_Core_API\\DemoMVC\\DemoMVC.csproj": {}
+    "e:\\Net_Core_API\\DemoMVC\\DemoMVC.csproj": {}
   },
   "projects": {
-    "E:\\Net_Core_API\\DemoMVC\\DemoMVC.csproj": {
+    "e:\\Net_Core_API\\DemoMVC\\DemoMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Net_Core_API\\DemoMVC\\DemoMVC.csproj",
+        "projectUniqueName": "e:\\Net_Core_API\\DemoMVC\\DemoMVC.csproj",
         "projectName": "DemoMVC",
-        "projectPath": "E:\\Net_Core_API\\DemoMVC\\DemoMVC.csproj",
+        "projectPath": "e:\\Net_Core_API\\DemoMVC\\DemoMVC.csproj",
         "packagesPath": "C:\\Users\\black\\.nuget\\packages\\",
-        "outputPath": "E:\\Net_Core_API\\DemoMVC\\obj\\",
+        "outputPath": "e:\\Net_Core_API\\DemoMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\black\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -47,11 +47,19 @@
               "target": "Package",
               "version": "[7.4.2, )"
             },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.SQLite": {
               "target": "Package",
@@ -65,11 +73,19 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.5, )"
+            },
+            "X.PagedList": {
+              "target": "Package",
+              "version": "[10.5.7, )"
+            },
+            "X.PagedList.Mvc.Core": {
+              "target": "Package",
+              "version": "[10.5.7, )"
             }
           },
           "imports": [

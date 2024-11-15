@@ -1,14 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DemoMVC.Data;
 using DemoMVC.Models.Entities;
 using DemoMVC.Models.Process;
 using OfficeOpenXml;
+using X.PagedList.Extensions;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace DemoMVC.Controllers
 {
@@ -22,9 +19,27 @@ namespace DemoMVC.Controllers
         {
             _context = context;
         }
-    public async Task<IActionResult> Index()
+
+        public async Task<IActionResult> Index()
         {
             var model = await _context.Person.ToListAsync();
+            return View(model);
+        }
+        [HttpGet]
+        public IActionResult Index(int? page , int PageSize)
+        {
+            ViewBag.PageSize = new List<SelectListItem>()
+            {
+                new SelectListItem { Value = "3", Text = "3" },
+                new SelectListItem { Value = "5", Text = "5" },
+                new SelectListItem { Value = "10", Text = "10" },
+                new SelectListItem { Value = "20", Text = "20" },
+                new SelectListItem { Value = "25", Text = "25" },
+                new SelectListItem { Value = "50", Text = "50" },
+            };
+            int pagesize =(PageSize =3);
+            ViewBag.psize = pagesize;
+            var model = _context.Person.ToList().ToPagedList(page ?? 1, pagesize);
             return View(model);
         }
         // GET: Person
